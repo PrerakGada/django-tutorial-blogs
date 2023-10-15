@@ -32,7 +32,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'blog',
-    'users',
     'crispy_forms',
     'crispy_bootstrap5',
     'tinymce',

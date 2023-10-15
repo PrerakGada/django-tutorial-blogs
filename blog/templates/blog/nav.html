@@ -22,6 +22,7 @@
         </li>
       </ul>
 
+      {% comment %}
       <ul class="navbar-nav">
         {% if request.user.is_authenticated %}
         <li class="nav-item">
@@ -36,6 +37,7 @@
         </li>
         {% endif %}
       </ul>
+      {% endcomment %}
     </div>
   </div>
 </nav>
