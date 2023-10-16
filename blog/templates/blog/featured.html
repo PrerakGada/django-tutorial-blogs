@@ -13,12 +13,12 @@
 		<div class="col-md-6 col-11 mx-md-auto mx-3 mt-5 mb-5">
 			<h3 class="fw-bold">{{ object.title }}</h3>
 			<p class="text-muted"> {{ object.date }}</p>
-			<p class="text-muted">Posted by {{ object.author.username }}</p>
-			{% if object.likes.count == 1 %}
+			{% comment %} <p class="text-muted">Posted by {{ object.author.username }}</p> {% endcomment %}
+			{% comment %} {% if object.likes.count == 1 %}
 				<p class="text-muted">{{ object.likes.count }} person likes this post</p>
 			{% else %}
 				<p class="text-muted">{{ object.likes.count }} people like this post</p>
-			{% endif %}
+			{% endif %} {% endcomment %}
 
 			<div class="my-3">
 				{{ object.content|truncatewords_html:50|safe }}
